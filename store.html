@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==== CSS FILE ==== -->
+    <link rel="stylesheet" href="./style/store.css">
+    <!-- ===== FONT AWOSME ===== -->
+    <script src="https://kit.fontawesome.com/b0a4269feb.js" crossorigin="anonymous"></script>
+    <!-- ===== NORMALIZE ===== -->
+    <link rel="stylesheet" href="./style/normalize.css">
+
+    <title>store</title>
+</head>
+<body>
+    <div class="bc">
+    <div class="nav">
+        <div class="logo">
+            <span>E-commerce Logo</span>
+        </div>
+
+        <ul class="links">
+            <li><a href="#Home">
+                <i class="fas fa-home"></i>
+                <!-- <span>home</span>--></a> 
+            </li>
+            <li>
+                <a href="#Products">
+                <i class="fas fa-dolly-flatbed"></i>
+                <!--<span>products</span>--></a>
+            </li>
+            <li>
+                <a href="#About">
+                <i class="fas fa-users"></i>
+                <!--<span>about</span>--></a>
+            </li>
+
+        </ul>
+    </div>
+
+        <header class="header" id="Home">
+        <div class="text">
+            <h5>welcome to our store you will find here what you need and more..!</h5>
+            <p>check out our sells.</p>
+        </div>
+        <div class="img">
+            <img src="./imgs/themain--svg.svg" alt="png">
+        </div>
+    </header>
+    </div>
+
+    <!-- ==== PRODUCTS PAGE ==== -->
+    <div class="products" id="Products">
+        <div class="contain">
+            <!-- == BOX--ONE == -->
+            <!-- <div class="box-01"> -->
+            <!-- == THE TITLE == -->
+            <!-- == THE FIRST ITEM == -->
+            <div class="one">
+                <div class="themaintitle">
+                    <h4 class="cart">Cart (2 items)</h4>
+                </div>
+                <div class="box_one">
+                    <div class="img-one-box">
+                    <img src="./imgs/shirt.webp" alt="">
+                    </div>
+                <div class="txt">
+                    <div class="count-box">
+                    <h5>blue zara shirt</h5>
+                    <!--  -->
+                <span class="togather">
+                    <span>
+                    <button class="mens btn"            onclick="decreaseNumber('textbox', 'price')">_</button>
+                </span>
+                <input type="nember" id="textbox" value="0">
+                <span>
+                    <button class="plus btn" onclick="increaseNumber('textbox','price')">+</button>
+                </span>
+            </span>
+    </div>
+    <div class="par">
+                    <p>shirt: blue</p>
+                    <p>color: blue</p>
+                    <p>size: M</p>
+    </div>
+        <!-- == ICONS BOX == -->
+                    <div class="icons-boxOne">
+                    <span>
+                        <i class="fas fa-trash-alt">
+                        </i><span>remove item</span>
+                    </span>
+                    <span>
+                        <i class="fas fa-heart"></i>
+                        <span>move to whis list</span>
+                    </span>
+                   
+                    <div class="price" id="price">00</div>
+                    </div>
+        <!-- == THE PRICE == -->
+                </div>
+            </div>
+
+
+        <!-- == THE SECOND ITEM == -->
+        <div class="box_two">
+                        <div class="img-two-box">
+                            <img src="./imgs/green-shirt.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                        
+                        <div class="count-box">
+                            <h5>green zara shirt</h5>
+                            <span class="togather">
+                                <button class="mens btn" onclick="decreaseNumber('textbox1', 'price1')">_</button>
+                                <input type="nember" id="textbox1" value="0">
+                                <button class="plus btn" onclick="increaseNumber('textbox1', 'price1')">+</button>
+                            </span>
+                        </span>
+                        </div>
+                        <div class="par">
+                            <p>shirt: green</p>
+                            <p>color: green</p>
+                            <p>size: M</p>
+                        </div>
+            <!-- == ICONS BOX == -->
+            <div class="icons-boxOne">
+                <span>
+                <i class="fas fa-trash-alt"></i>
+                <span>remove item</span>
+            </span>
+            <span>
+                <i class="fas fa-heart"></i>
+                <span>move to widh list</span>
+            </span>
+            
+            <div class="price1" id="price1">00</div>
+            </div>
+                    </div>
+        <!-- == THE MENS AND PLUS BTN ==  -->
+
+
+            <!-- == THE PRICE == -->
+            </div>
+            </div>
+
+        <!-- == BOX--TOW == -->
+        <div class="box-02">
+        <div class="box_three">
+            <div class="title-1">
+                <h2>the total amount </h2>
+            </div>    
+                <div class="count-box_two">
+                    <div class="s2">
+                    <h6>product amount</h6>
+                    <p>$<span id="product_amount">00.00</span></p>
+                    </div>
+
+                    <div class="s1">
+                    <h6>shoping charge</h6>
+                    <p>$<span id="shoping_charge">50.00</span></p>
+                    </div>
+                </div>
+                <div class="box_four">
+                    <div class="title-2">
+                        <h5>the total amount of (including VAT)</h5>
+                        <div class="totla_price">
+                            $<span id="totalAmount">00.00</span>
+                        </div>
+                        </div>
+                        <button class="checkout">checkout</button>
+                    
+            </div>
+        </div>
+                
+
+                <div class="between">
+                    <div class="txt-between">
+                        <h3>add a discount code (optional)</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="bc-2">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter The Discount Code" id="discountcode">
+                        <p id="thecode">Code is (waui)</p>
+                    </div>
+                    <button class="apply" onclick="discountCode()">Apply</button>
+                </div>
+            </div>
+        <div class="box_five">
+            <div class="title_last">
+                <h2>expected delivery date</h2>
+                <span class="date">july 27th 2021</span>
+            </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- <section class="about">
+    <div class="container">
+        <div class="content-about">
+            <h5>About Us</h5>
+            <p>Who we are?</p>
+        </div>
+    </div>
+</section> -->
+
+
+    <script src="store.js"></script>
+</body>
+</html>
